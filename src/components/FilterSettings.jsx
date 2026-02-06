@@ -20,7 +20,7 @@ const FilterSettings = () => {
   };
 
   return (
-    <div className="w-80 bg-dark-secondary border-r border-dark-border h-screen overflow-y-auto flex flex-col">
+    <div className="w-100 p-6 bg-dark-secondary border-r border-dark-border h-screen overflow-y-auto flex flex-col custom-scrollbar">
       {/* Tabs */}
       <div className="flex border-b border-dark-border">
         <button
@@ -189,7 +189,32 @@ const FilterSettings = () => {
           <p className="text-gray-400 text-sm">No recent searches</p>
         </div>
       )}
+
+      <style jsx>{
+      `
+        .custom-scrollbar::-webkit-scrollbar {
+          width: 10px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+          background: #0f172a;
+          border-radius: 10px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background: #334155;
+          border-radius: 10px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+          background: #475569;
+        }
+      `
+      }</style>
+
     </div>
+
+    
   );
 };
 

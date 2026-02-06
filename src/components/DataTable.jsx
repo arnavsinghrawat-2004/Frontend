@@ -19,12 +19,12 @@ const DataTable = ({ data, breakdownBy }) => {
   const totalDealCount2025 = displayData.reduce((sum, item) => sum + item.dealCount2025, 0);
 
   return (
-    <div className="p-6 bg-dark-primary">
+    <div className="p-4 bg-dark-primary">
       
       {/* SCROLL CONTAINER */}
       <div className="overflow-x-auto custom-scrollbar">
         
-        <table className="w-full border-collapse min-w-[1000px]">
+        <table className="w-full border-collapse min-w-[800px]">
           <thead>
             <tr className="bg-dark-secondary">
               <th colSpan="5" className="px-4 py-3 text-center text-sm font-semibold text-white border-b-2 border-dark-border min-w-[80px]">

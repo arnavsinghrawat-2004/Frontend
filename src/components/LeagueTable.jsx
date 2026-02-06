@@ -19,7 +19,7 @@ const LeagueTable = () => {
   };
 
   return (
-    <div className="flex h-screen bg-dark-primary overflow-hidden">
+    <div className="flex h-screen bg-dark-primary">
       {/* Filter Settings Sidebar (Left) */}
       {/* Main Content Area (Right) */}
       <div className="flex-1 flex flex-col overflow-hidden">
@@ -39,7 +39,7 @@ const LeagueTable = () => {
               Financial Advisors 2026 YTD
             </button>
           </div>
-          
+
           <div className="flex items-center gap-4">
             <button className="px-4 py-2 bg-blue-accent text-white rounded text-sm hover:bg-blue-hover transition-colors">
               Save Search
@@ -55,11 +55,24 @@ const LeagueTable = () => {
             </a>
           </div>
         </div>
-        
-        <FilterBar onFilterChange={handleFilterChange} />
 
-        <div className="flex-1 overflow-y-auto">
-          <DataTable breakdownBy={filters.breakdownBy} />
+        <div>
+          <FilterBar onFilterChange={handleFilterChange} />
+        </div>
+        
+
+        <div className="flex flex-row h-full">
+
+          {/* Fixed space section */}
+          <div className="shrink-0">
+            <FilterSettings/>
+          </div>
+
+          {/* Remaining space section */}
+          <div className="flex-1 min-w-2">
+            <DataTable breakdownBy={filters.breakdownBy} />
+          </div>
+
         </div>
       </div>
     </div>
