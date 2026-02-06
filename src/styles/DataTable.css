@@ -1,0 +1,156 @@
+.data-table-container {
+  background-color: #252936;
+  border-radius: 6px;
+  padding: 1.5rem;
+  overflow-x: auto;
+}
+
+.table-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  overflow-y: visible;
+}
+
+.league-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1000px;
+}
+
+.league-table thead {
+  background-color: #1a1d29;
+}
+
+.league-table th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ffffff;
+  border-bottom: 2px solid #3a3d4a;
+}
+
+.year-header {
+  text-align: center;
+  background-color: #2a2d3a;
+}
+
+.sub-header th {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #a0a0a0;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+
+.rank-col {
+  min-width: 80px;
+}
+
+.trend-col {
+  min-width: 60px;
+  text-align: center;
+}
+
+.league-table tbody tr {
+  border-bottom: 1px solid #3a3d4a;
+  transition: background-color 0.2s;
+}
+
+.league-table tbody tr:hover {
+  background-color: rgba(74, 158, 255, 0.05);
+}
+
+.league-table td {
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  color: #e0e0e0;
+}
+
+.name-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.expand-icon {
+  color: #4a9eff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: transform 0.2s;
+  user-select: none;
+}
+
+.expand-icon:hover {
+  transform: rotate(90deg);
+}
+
+.trend-cell {
+  text-align: center;
+}
+
+.trend-up {
+  color: #4ade80;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.trend-down {
+  color: #f87171;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.trend-neutral {
+  color: #a0a0a0;
+  font-size: 1.1rem;
+}
+
+.rank-cell {
+  text-align: center;
+  color: #a0a0a0;
+}
+
+.total-row {
+  background-color: #1a1d29;
+  font-weight: 600;
+}
+
+.total-label {
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+.total-value {
+  color: #ffffff;
+  text-align: right;
+}
+
+.table-footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #3a3d4a;
+}
+
+.table-footer p {
+  font-size: 0.85rem;
+  color: #a0a0a0;
+  line-height: 1.6;
+}
+
+.table-footer a {
+  color: #4a9eff;
+  text-decoration: none;
+}
+
+.table-footer a:hover {
+  text-decoration: underline;
+}

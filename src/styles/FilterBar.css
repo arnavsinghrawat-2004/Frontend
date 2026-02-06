@@ -1,0 +1,100 @@
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #252936;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.filter-icon {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.filter-dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 150px;
+}
+
+.filter-dropdown label {
+  font-size: 0.75rem;
+  color: #a0a0a0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.filter-dropdown select {
+  background-color: #1a1d29;
+  border: 1px solid #3a3d4a;
+  color: #ffffff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.filter-dropdown select:hover {
+  border-color: #4a9eff;
+}
+
+.filter-dropdown select:focus {
+  outline: none;
+  border-color: #4a9eff;
+  box-shadow: 0 0 0 2px rgba(74, 158, 255, 0.2);
+}
+
+.filter-dropdown select option {
+  background-color: #1a1d29;
+  color: #ffffff;
+}
+
+.filter-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto;
+  align-items: center;
+}
+
+.optimize-btn {
+  background-color: #4a9eff;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.optimize-btn:hover {
+  background-color: #3a8eef;
+}
+
+.filter-settings-btn,
+.download-btn {
+  background-color: transparent;
+  border: 1px solid #3a3d4a;
+  color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.filter-settings-btn:hover,
+.download-btn:hover {
+  border-color: #4a9eff;
+  color: #4a9eff;
+}

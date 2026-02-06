@@ -1,0 +1,89 @@
+.league-table-page {
+  min-height: 100vh;
+  background-color: #1a1d29;
+  color: #ffffff;
+  padding: 2rem;
+  position: relative;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+  color: #ffffff;
+}
+
+.header-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.save-btn {
+  background-color: transparent;
+  border: 1px solid #4a9eff;
+  color: #4a9eff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.save-btn:hover {
+  background-color: #4a9eff;
+  color: #ffffff;
+}
+
+.tabs-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.tab {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #4a9eff;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #4a9eff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.tab.selected {
+  background-color: #4a9eff;
+  color: #ffffff;
+}
+
+.tab:hover:not(.selected) {
+  background-color: rgba(74, 158, 255, 0.1);
+}
+
+.feedback-button {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #4a9eff;
+  color: #ffffff;
+  padding: 1rem 0.5rem;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  border-radius: 4px 0 0 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  z-index: 100;
+  transition: background-color 0.2s;
+}
+
+.feedback-button:hover {
+  background-color: #3a8eef;
+}
